@@ -5,7 +5,7 @@ set retryNumber=0
 set maxRetries=3
 
 :RESTORE
-nuget restore %*  -verbosity detailed
+nuget restore  -verbosity detailed
 
 rem problem?
 IF ERRORLEVEL %errorCode% GOTO :RETRY
