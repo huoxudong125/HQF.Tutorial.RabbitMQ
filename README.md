@@ -4,5 +4,9 @@
 
 
 #PreRequires
-RabbitMQ  
-Elang  
+[RabbitMQ](https://www.rabbitmq.com/getstarted.html)  
+[Elang](http://www.erlang.org/download.html)  
+
+
+#Source Code
+[RabbitMQ on Github](https://github.com/rabbitmq)  
