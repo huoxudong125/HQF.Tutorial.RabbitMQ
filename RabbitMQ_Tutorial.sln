@@ -3,11 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Tutorial.Send", "RabbitMQ.Tutorial.Send\RabbitMQ.Tutorial.Send.csproj", "{A8C61CA1-A521-4780-9525-EEFD57591CA7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkQueues", "WorkQueues", "{93A730C4-2C40-4322-AA3F-6CC18E1A6576}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Tutorial.Receive", "RabbitMQ.Tutorial.Receive\RabbitMQ.Tutorial.Receive.csproj", "{0064E410-EAA0-426B-B8ED-34896E9044E9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Single", "Single", "{0B786D1F-8C95-437D-BDBC-0A5D8A6EC0E3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Single", "Single", "{AACAA4C5-7EF2-45F6-92EC-025B9F360DC6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Tutorial.Receive", "Single\RabbitMQ.Tutorial.Receive\RabbitMQ.Tutorial.Receive.csproj", "{0064E410-EAA0-426B-B8ED-34896E9044E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Tutorial.Send", "Single\RabbitMQ.Tutorial.Send\RabbitMQ.Tutorial.Send.csproj", "{A8C61CA1-A521-4780-9525-EEFD57591CA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkQueues.Sender", "WorkQueues\WorkQueues.Sender\WorkQueues.Sender.csproj", "{051C2AB1-4992-44E5-A405-263D2580EA49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkQueues.Receiver", "WorkQueues.Receiver\WorkQueues.Receiver.csproj", "{70036E1A-EA35-4F85-88AA-3DC11FA5FCD4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,20 +21,30 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A8C61CA1-A521-4780-9525-EEFD57591CA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A8C61CA1-A521-4780-9525-EEFD57591CA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A8C61CA1-A521-4780-9525-EEFD57591CA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A8C61CA1-A521-4780-9525-EEFD57591CA7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0064E410-EAA0-426B-B8ED-34896E9044E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0064E410-EAA0-426B-B8ED-34896E9044E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0064E410-EAA0-426B-B8ED-34896E9044E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0064E410-EAA0-426B-B8ED-34896E9044E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8C61CA1-A521-4780-9525-EEFD57591CA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8C61CA1-A521-4780-9525-EEFD57591CA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8C61CA1-A521-4780-9525-EEFD57591CA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8C61CA1-A521-4780-9525-EEFD57591CA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{051C2AB1-4992-44E5-A405-263D2580EA49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{051C2AB1-4992-44E5-A405-263D2580EA49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{051C2AB1-4992-44E5-A405-263D2580EA49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{051C2AB1-4992-44E5-A405-263D2580EA49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70036E1A-EA35-4F85-88AA-3DC11FA5FCD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70036E1A-EA35-4F85-88AA-3DC11FA5FCD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70036E1A-EA35-4F85-88AA-3DC11FA5FCD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70036E1A-EA35-4F85-88AA-3DC11FA5FCD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{A8C61CA1-A521-4780-9525-EEFD57591CA7} = {AACAA4C5-7EF2-45F6-92EC-025B9F360DC6}
-		{0064E410-EAA0-426B-B8ED-34896E9044E9} = {AACAA4C5-7EF2-45F6-92EC-025B9F360DC6}
+		{0064E410-EAA0-426B-B8ED-34896E9044E9} = {0B786D1F-8C95-437D-BDBC-0A5D8A6EC0E3}
+		{A8C61CA1-A521-4780-9525-EEFD57591CA7} = {0B786D1F-8C95-437D-BDBC-0A5D8A6EC0E3}
+		{051C2AB1-4992-44E5-A405-263D2580EA49} = {93A730C4-2C40-4322-AA3F-6CC18E1A6576}
+		{70036E1A-EA35-4F85-88AA-3DC11FA5FCD4} = {93A730C4-2C40-4322-AA3F-6CC18E1A6576}
 	EndGlobalSection
 EndGlobal
