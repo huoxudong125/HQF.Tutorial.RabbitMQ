@@ -21,6 +21,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Publisher", "PublishSubscri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Subscriber", "PublishSubscribe\Subscriber\Subscriber.csproj", "{2CBE31F9-FD4E-463B-B095-3D51106B1438}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Routing", "Routing", "{AEAF3D26-5523-4B14-ACB9-BFBBB6536F54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Routing.Publisher", "Routing\Routing.Publisher\Routing.Publisher.csproj", "{B58F10C1-BBCB-4EDF-AFC1-1CDEE02577C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Routing.Subscriber", "Routing\Routing.Subscriber\Routing.Subscriber.csproj", "{0115C3DE-DEF3-4044-A364-03A7A282B19C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +57,14 @@ Global
 		{2CBE31F9-FD4E-463B-B095-3D51106B1438}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CBE31F9-FD4E-463B-B095-3D51106B1438}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CBE31F9-FD4E-463B-B095-3D51106B1438}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B58F10C1-BBCB-4EDF-AFC1-1CDEE02577C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B58F10C1-BBCB-4EDF-AFC1-1CDEE02577C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B58F10C1-BBCB-4EDF-AFC1-1CDEE02577C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B58F10C1-BBCB-4EDF-AFC1-1CDEE02577C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0115C3DE-DEF3-4044-A364-03A7A282B19C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0115C3DE-DEF3-4044-A364-03A7A282B19C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0115C3DE-DEF3-4044-A364-03A7A282B19C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0115C3DE-DEF3-4044-A364-03A7A282B19C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,5 +76,7 @@ Global
 		{70036E1A-EA35-4F85-88AA-3DC11FA5FCD4} = {93A730C4-2C40-4322-AA3F-6CC18E1A6576}
 		{C436A073-88A5-4481-943B-9C0B50CB25C7} = {936BFE4D-14ED-4307-9BFC-79B3F21C9EDB}
 		{2CBE31F9-FD4E-463B-B095-3D51106B1438} = {936BFE4D-14ED-4307-9BFC-79B3F21C9EDB}
+		{B58F10C1-BBCB-4EDF-AFC1-1CDEE02577C8} = {AEAF3D26-5523-4B14-ACB9-BFBBB6536F54}
+		{0115C3DE-DEF3-4044-A364-03A7A282B19C} = {AEAF3D26-5523-4B14-ACB9-BFBBB6536F54}
 	EndGlobalSection
 EndGlobal
