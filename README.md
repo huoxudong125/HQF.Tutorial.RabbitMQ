@@ -3,10 +3,14 @@
 
 
 
-#PreRequires
+##PreRequires
 [RabbitMQ](https://www.rabbitmq.com/getstarted.html)  
 [Elang](http://www.erlang.org/download.html)  
 
 
-#Source Code
+##Source Code
 [RabbitMQ on Github](https://github.com/rabbitmq)  
+
+
+##Related Blog
+ [RabbitMQ for Windows](http://aspiringcraftsman.com/series/rabbitmq-for-windows/)   
